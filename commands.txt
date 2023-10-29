@@ -54,3 +54,21 @@ git reflog returns a local list of recent Head commits
 
 
 git checkout -b <branch-name> <head-id_that reflog>  (to undo commits in new branch)
+
+_____________________________________
+
+git log --online --graph --all (view commit graph)
+
+
+fast forward merge:
+	if master do not have another commit
+
+	git merge <branch-name>
+
+perform a merge with a merge commit:
+	git merge --no-ff <branch-name>
+
+	and now you can delete branch:
+
+
+if master branch have comment then merge not be ff 
