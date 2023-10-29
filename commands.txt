@@ -71,4 +71,8 @@ perform a merge with a merge commit:
 	and now you can delete branch:
 
 
-if master branch have comment then merge not be ff 
+A commit was made on the base branch after the topic branch was created.if master branch have comment then merge not be ff 
+
+_____________________________________
+
+git merge and solve merge conflict
