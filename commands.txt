@@ -1,3 +1,13 @@
 git status -h (use help for status action)
 git status -s (display status in short version)
 git log --oneline --graph  (display grapth)
+_____________________________________
+git hash-object  <file>   (hash object with sha1)
+git log --oneline  (show history of commit with one line)
+git show <commit id>
+
+
+to display text in terminal:
+	cat <file>
+	less <file>
+echo <text> >> <file>
