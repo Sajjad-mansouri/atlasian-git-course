@@ -89,3 +89,10 @@ _____________________________________
 git branch -all (to view the local and tracking branch name)
 git log --all --oneline  --graph (to view combined log of all local and tracking branch)
 git remote set-head origin <branch-name> (change the default remote tracking branch )
+
+78a38fd (featureY) some change in local branch
+270dcd4 (origin/featureY, origin/HEAD) create file in local repo branch
+56941e0 (HEAD -> master) change local repo
+4e1802a (origin/master) Merge branch 'newfeature'
+40f8e61 (newfeature) create conflict file in branch
+6fbd009 create conflicted file
