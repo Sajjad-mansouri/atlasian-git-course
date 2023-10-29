@@ -11,3 +11,29 @@ to display text in terminal:
 	cat <file>
 	less <file>
 echo <text> >> <file>
+
+_____________________________________
+
+git log --oneline -<number_of_items_to_display>
+
+(HEAD and ref directory in .git location)
+
+git show HEAD ~<parent's parent's ...>
+
+^ or ^1 first parent of commit
+^2 seconf parent of commit
+^^ first parent's first parent
+
+git tag (view all tags)
+git show v1.0 
+
+simple tag:
+	git tag  <tag-name> [<commit>]
+
+annotiation tag:
+	git tag -a [-m <message>|-f <file>] <tag-name> [<commit>]
+
+git tag -d <tag-name>
+
+git push <remote> <tagname>
+git push <rempte> --tags (push all tags)
