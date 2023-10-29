@@ -96,3 +96,42 @@ git remote set-head origin <branch-name> (change the default remote tracking bra
 4e1802a (origin/master) Merge branch 'newfeature'
 40f8e61 (newfeature) create conflict file in branch
 6fbd009 create conflicted file
+
+
+_____________________________________
+network command:
+clone
+fetch
+pull
+push
+
+fetch:
+	Git fetch is a command that updates your local repository with the latest changes from the remote repository. It does this by downloading all of the new commits and files from the remote repository, but it does not merge them into your current branch.
+
+pull:
+	git pull is combines git fetch and git merge FETCH_HEAD
+
+	Git pull is a command that combines the functionality of git fetch and git merge. It fetches the latest changes from the remote repository and merges them into the current branch.
+
+	Git pull --ff performs a fast-forward merge. This means that if the current branch is already up to date with the remote branch, Git will simply move the branch pointer to point to the latest remote commit. If the current branch is not up to date with the remote branch, Git will create a merge commit.
+
+	Git pull --no-ff always creates a merge commit, even if the current branch is already up to date with the remote branch.
+
+	git pull merging options:
+		--ff (default) fast-forward if possible otherwise perform a merge commit
+		--no-ff  always include a merge commit
+		--ff-only cancel instead of doing a merge commit
+		--rabase [--preserver-merges] 
+
+	git pull with conflicting uncommitted changes
+		commit your changes or stash them 
+
+	git pull with safe uncommitted changes:
+		is ok
+
+
+push:
+	git push [-u] [<repository>] [<branch>]
+
+	-u track this branch (--set-upstream)
+ general rull to pull or fetch before push
