@@ -37,3 +37,20 @@ git tag -d <tag-name>
 
 git push <remote> <tagname>
 git push <rempte> --tags (push all tags)
+
+_____________________________________
+
+git branch (display branches)
+git branch <branch-name> (create branch)
+git checkout <branch-name>
+
+git ckeckout -b <branch-name> (create branch and checkout)
+
+git branch -d <branch-name> (delete branch label if no commit exist )
+git branch -D <branch-name> (delete branch lable if exist commit,and create Dangling commits)
+
+undoing an accidental branch delete with git reflog
+git reflog returns a local list of recent Head commits
+
+
+git checkout -b <branch-name> <head-id_that reflog>  (to undo commits in new branch)
