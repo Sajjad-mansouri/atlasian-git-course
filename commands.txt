@@ -1,0 +1,3 @@
+git status -h (use help for status action)
+git status -s (display status in short version)
+git log --oneline --graph  (display grapth)
