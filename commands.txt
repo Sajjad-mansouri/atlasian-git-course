@@ -76,3 +76,16 @@ A commit was made on the base branch after the topic branch was created.if maste
 _____________________________________
 
 git merge and solve merge conflict
+if conflict exist:
+	git status  
+	subl <file_that-has-conflict>
+	<modify file>
+	git add <file_name>
+	git commit [<message by default is merge message>]
+
+
+_____________________________________
+
+git branch -all (to view the local and tracking branch name)
+git log --all --oneline  --graph (to view combined log of all local and tracking branch)
+git remote set-head origin <branch-name> (change the default remote tracking branch )
